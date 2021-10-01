@@ -6,17 +6,23 @@
 }
 
 .qna {
-    background-color: whitesmoke;
-    border-radius: 20px;
     width: 80%;
     text-align: center;
-    padding: 30px;
-    margin: 20px auto;
     display: none;
     font-family: 'MaplestoryOTFLight';
 }
 .qBox {
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: whitesmoke;
     padding-bottom: 30px;
+}
+.answerBox {
+    margin: auto;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 30px;
 }
 .answerList{
     font-family: 'MaplestoryOTFLight';
