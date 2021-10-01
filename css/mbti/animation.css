@@ -1,0 +1,22 @@
+@keyframes slideIn {
+    from { 
+        margin-left: 100%;
+        width: 300%
+    }
+    to {  
+        margin-left: 0%;
+        width: 100%;
+     }
+}
+@keyframes slideOut {
+    from { 
+        margin-left: 0%;
+        width: -100%;
+        opacity: 1;
+    }
+    to {  
+        margin-left: -100%;
+        width: -150%;
+        opacity: 0;
+     }
+}

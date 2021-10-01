@@ -37,7 +37,7 @@ body {
     margin-left: 50px;
   }
   
-  #main {
+  #ani {
     transition: margin-left .5s;
     margin: 0px;
   }
