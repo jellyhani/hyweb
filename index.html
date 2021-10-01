@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mbti.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="MBTI" href="#">MBTI Test</a>
+        <a id="Kakao" href="#">Kakaotalk WordCloud</a>
+        <a id="HY" href="#">H.Y 구별기</a>
+        <a id="Album" href="#">Album</a>
+    </div>
+    <div id="container">
+        
+        <section id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MBTI</span>
+            <div class="mbtiitem">
+            <h3>간단 MBTI 분별기!</h3>
+            <p>짧고 간단한 12문제만 응답해주시면 분석에 의해 MBTI를 알려드립니다</p>
+            <button type="button" class="btn"><span>시작하기</span></button>
+        </div>
+        </section>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "160px";
+            document.getElementById("main").style.marginLeft = "160px";
+            document.body.style.backgroundColor = "rgba(199,21,133,0.4)";
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "pink";
+        }
+
+        $('#MBTI').on('click', function () {
+            $('#span').load('http://127.0.0.1:5500/mbti/index.html');
+        });
+        $('#Kakao').on('click', function () {
+            $('#span').load('http://127.0.0.1:5500/mbti/kakao.html');
+        });
+        $('#HY').on('click', function () {
+            $('#span').load('http://127.0.0.1:5500/mbti/hy.html');
+        });
+        $('#Album').on('click', function () {
+            $('#span').load('http://127.0.0.1:5500/mbti/album.html');
+        });
+// $('#MBTI').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/index.html');
+// });
+// $('#Kakao').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/kakao.html');
+// });
+// $('#HY').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/hy.html');
+// });
+// $('#Album').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/album.html');
+// });
+
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8407798776024295"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
