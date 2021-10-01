@@ -25,14 +25,14 @@ $('#Album').on('click', function () {
 });
 */
  $('#MBTI').on('click', function() {
-   $('#span').load('https://hymbti.netlify.app/index.html');
+   $('#container').load('https://hymbti.netlify.app/index.html');
  });
  $('#Kakao').on('click', function() {
-   $('#span').load('https://hymbti.netlify.app/kakao.html');
+   $('#container').load('https://hymbti.netlify.app/kakao.html');
  });
  $('#HY').on('click', function() {
-   $('#span').load('https://hymbti.netlify.app/hy.html');
+   $('#container').load('https://hymbti.netlify.app/hy.html');
  });
  $('#Album').on('click', function() {
-   $('#span').load('https://hymbti.netlify.app/album.html');
+   $('#container').load('https://hymbti.netlify.app/album.html');
  });
