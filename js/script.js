@@ -10,7 +10,7 @@ function closeNav() {
     document.getElementById("ani").style.marginLeft = "0";
     document.body.style.backgroundColor = "pink";
 }
-
+/*
 $('#MBTI').on('click', function () {
     $('#container').load('http://127.0.0.1:5500/index.html');
 });
@@ -23,15 +23,16 @@ $('#HY').on('click', function () {
 $('#Album').on('click', function () {
     $('#container').load('http://127.0.0.1:5500/album.html');
 });
-// $('#MBTI').on('click', function() {
-//   $('#span').load('https://hymbti.netlify.app/index.html');
-// });
-// $('#Kakao').on('click', function() {
-//   $('#span').load('https://hymbti.netlify.app/kakao.html');
-// });
-// $('#HY').on('click', function() {
-//   $('#span').load('https://hymbti.netlify.app/hy.html');
-// });
-// $('#Album').on('click', function() {
-//   $('#span').load('https://hymbti.netlify.app/album.html');
-// });
+*/
+ $('#MBTI').on('click', function() {
+   $('#span').load('https://hymbti.netlify.app/index.html');
+ });
+ $('#Kakao').on('click', function() {
+   $('#span').load('https://hymbti.netlify.app/kakao.html');
+ });
+ $('#HY').on('click', function() {
+   $('#span').load('https://hymbti.netlify.app/hy.html');
+ });
+ $('#Album').on('click', function() {
+   $('#span').load('https://hymbti.netlify.app/album.html');
+ });
