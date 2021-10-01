@@ -11,27 +11,27 @@ function closeNav() {
     document.body.style.backgroundColor = "pink";
 }
 
-// $('#MBTI').on('click', function () {
-//     $('#container').load('http://127.0.0.1:5500/mbti/index.html');
-// });
-// $('#Kakao').on('click', function () {
-//     $('#container').load('http://127.0.0.1:5500/mbti/kakao.html');
-// });
-// $('#HY').on('click', function () {
-//     $('#container').load('http://127.0.0.1:5500/mbti/hy.html');
-// });
-// $('#Album').on('click', function () {
-//     $('#container').load('http://127.0.0.1:5500/mbti/album.html');
-// });
-$('#MBTI').on('click', function() {
-  $('#span').load('https://hymbti.netlify.app/index.html');
+$('#MBTI').on('click', function () {
+    $('#container').load('http://127.0.0.1:5500/index.html');
 });
-$('#Kakao').on('click', function() {
-  $('#span').load('https://hymbti.netlify.app/kakao.html');
+$('#Kakao').on('click', function () {
+    $('#container').load('http://127.0.0.1:5500/kakao.html');
 });
-$('#HY').on('click', function() {
-  $('#span').load('https://hymbti.netlify.app/hy.html');
+$('#HY').on('click', function () {
+    $('#container').load('http://127.0.0.1:5500/hy.html');
 });
-$('#Album').on('click', function() {
-  $('#span').load('https://hymbti.netlify.app/album.html');
+$('#Album').on('click', function () {
+    $('#container').load('http://127.0.0.1:5500/album.html');
 });
+// $('#MBTI').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/index.html');
+// });
+// $('#Kakao').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/kakao.html');
+// });
+// $('#HY').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/hy.html');
+// });
+// $('#Album').on('click', function() {
+//   $('#span').load('https://hymbti.netlify.app/album.html');
+// });

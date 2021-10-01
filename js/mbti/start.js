@@ -44,6 +44,7 @@ function begin(){
         qna.style.animation = "slideIn 0.5s";
         setTimeout(() => {
             qna.style.display = "block";
+            qna.style.margin = "20px auto";
         }, 240)
         let qIdex = 0;
         goNext(qIdex);
