@@ -72,3 +72,15 @@
 .answerList:disabled{
     opacity: 0.5;
 }
+.status {
+    height: 20px;
+    margin: auto;
+    width: 100%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.statusBar {
+    height: 100%;
+    background-color: skyblue;
+    border-radius: 20px;
+}

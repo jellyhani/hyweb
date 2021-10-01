@@ -1,6 +1,6 @@
 const main = document.querySelector(".mbtiitem");
 const qna = document.querySelector(".qna");
-
+const endPoint = 12;
 
 function addAnswer(answerText ,qIdex){
     var a = document.querySelector('.answerBox');
@@ -32,6 +32,8 @@ function goNext(qIdex){
     for(let i in qnaList[qIdex].a) {
         addAnswer(qnaList[qIdex].a[i].answer, qIdex);
     }
+    var statusBar = document.querySelector('.statusBar');
+    statusBar.style.width = (100/endPoint) * (qIdex+1) + '%';
 }
 
 function begin(){
