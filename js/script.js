@@ -24,7 +24,7 @@ $('#Album').on('click', function () {
     $('#container').load('http://127.0.0.1:5500/album.html');
 });
 */
- $('#MBTI').on('click', function() {
+ $(document).on('click', '#MBTI', function() {
    $('#container').load('https://hymbti.netlify.app/index.html');
  });
  $('#Kakao').on('click', function() {
