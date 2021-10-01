@@ -7,13 +7,10 @@ function addAnswer(answerText ,qIdex){
     var answer = document.createElement('button');
     answer.classList.add('answerList');
     a.appendChild(answer);
-    setTimeout(() => {
         setTimeout(() => {
             answer.style.display = "flex";
             answer.innerHTML = answerText;
-        }, 240)
-    }, 240)
-    
+        }, 480)
     answer.addEventListener("click", function(){
         var children = document.querySelectorAll('.answerList');
         for(let i = 0; i < children.length; i++) {
