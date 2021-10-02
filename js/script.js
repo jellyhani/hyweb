@@ -10,20 +10,20 @@ function closeNav() {
     document.getElementById("ani").style.marginLeft = "0";
     document.body.style.backgroundColor = "pink";
 }
-/*
-$('#MBTI').on('click', function () {
-    $('#container').load('http://127.0.0.1:5500/index.html');
-});
-$('#Kakao').on('click', function () {
-    $('#container').load('http://127.0.0.1:5500/kakao.html');
-});
-$('#HY').on('click', function () {
-    $('#container').load('http://127.0.0.1:5500/hy.html');
-});
-$('#Album').on('click', function () {
-    $('#container').load('http://127.0.0.1:5500/album.html');
-});
-*/
+
+// $('#MBTI').on('click', function () {
+//     $('#container').load('http://127.0.0.1:5500/index.html');
+// });
+// $('#Kakao').on('click', function () {
+//     $('#container').load('http://127.0.0.1:5500/kakao.html');
+// });
+// $('#HY').on('click', function () {
+//     $('#container').load('http://127.0.0.1:5500/hy.html');
+// });
+// $('#Album').on('click', function () {
+//     $('#container').load('http://127.0.0.1:5500/album.html');
+// });
+
  $('#MBTI').on('click', function() {
    $('#container').load('https://hymbti.netlify.app/index.html');
  });

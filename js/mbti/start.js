@@ -1,6 +1,6 @@
-const main = document.querySelector(".mbtiitem");
-const qna = document.querySelector(".qna");
-const endPoint = 12;
+var main = document.querySelector(".mbtiitem");
+var qna = document.querySelector(".qna");
+var endPoint = 12;
 
 function addAnswer(answerText ,qIdex){
     var a = document.querySelector('.answerBox');
@@ -15,9 +15,9 @@ function addAnswer(answerText ,qIdex){
         var children = document.querySelectorAll('.answerList');
         for(let i = 0; i < children.length; i++) {
             children[i].style.animation = "slideOut 0.5s";
+            children[i].disabled = 'disabled';
             setTimeout(() => {
                 setTimeout(() => {
-                    children[i].disabled = true;
                     children[i].style.display = 'none';
                 }, 240)
             }, 240)
