@@ -15,8 +15,12 @@
     border-radius: 20px;
     width: 80%;
     text-align: center;
-    padding-top: 5px;
+    padding: 10px;
     margin: 20px auto;
+}
+.mbtiitem p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #main span{
     text-align: left;
