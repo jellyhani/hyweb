@@ -1,3 +1,49 @@
+@font-face {
+    font-family: 'MaplestoryOTFLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .result {
+    width: 80%;
+    text-align: center;
     display: none;
+    font-family: 'MaplestoryOTFLight';
+}
+.resultname {
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+.resultcon {
+    font-size: 20px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+.share {
+    vertical-align: middle;
+    margin: 0;
+    padding:  0.5rem 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    appearance: none;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: yellow;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
 }

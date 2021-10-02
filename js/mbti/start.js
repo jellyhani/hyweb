@@ -1,88 +1,101 @@
-const main = document.querySelector(".mbtiitem");
-const qna = document.querySelector(".qna");
-const result = document.querySelector(".result");
+var main = document.querySelector(".mbtiitem");
+var qna = document.querySelector(".qna");
+var result = document.querySelector(".result");
 
-const endPoint = 12;
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var endPoint = 12;
+var select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-function calResult(){
+function calResult() {
   console.log(select);
   var result = select.indexOf(Math.max(...select));
   return result;
 }
 
-function setResult(){
+function setResult() {
   let point = calResult();
-  const resultName = document.querySelector('.resultname');
+  var resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;
 
-  const resultDesc = document.querySelector('.resultDesc');
+  var resultDesc = document.querySelector('.resultDesc');
   resultDesc.innerHTML = infoList[point].desc;
 }
 
-function goResult(){
-  qna.style.animation = "slideOut 0.5s";
+function goResult() {
+  setTimeout(() => {
+    qna.style.animation = "slideOut 0.5s";
+    setTimeout(() => {
+      qna.style.display = "none";
+    }, 240)
+  }, 240);
   setTimeout(() => {
     result.style.animation = "slideIn 0.5s";
     setTimeout(() => {
-      qna.style.display = "none";
-      result.style.display = "block"
-    }, 450)})
-    setResult();
+      result.style.display = "block";
+      result.style.margin = "20px auto";
+    }, 240)
+  }, 240);
+  setResult();
 }
 
-function addAnswer(answerText, qIdx, idx){
+function addAnswer(answerText, qIdx, idx) {
   var a = document.querySelector('.answerBox');
   var answer = document.createElement('button');
   answer.classList.add('answerList');
-
   a.appendChild(answer);
-  answer.innerHTML = answerText;
-
-  answer.addEventListener("click", function(){
+  setTimeout(() => {
+    answer.style.display = "flex";
+    answer.innerHTML = answerText;
+  }, 220)
+  answer.addEventListener("click", function () {
     var children = document.querySelectorAll('.answerList');
-    for(let i = 0; i < children.length; i++){
-      children[i].disabled = true;
-      children[i].style.WebkitAnimation = "fadeOut 0.5s";
-      children[i].style.animation = "fadeOut 0.5s";
+    for (let i = 0; i < children.length; i++) {
+      children[i].disabled = 'disabled';
+      children[i].style.animation = "slideOut 0.5s";
+      setTimeout(() => {
+        for (let i = 0; i < children.length; i++) {
+          children[i].style.display = 'none';
+        }
+      }, 220);
     }
     setTimeout(() => {
       var target = qnaList[qIdx].a[idx].type;
-      for(let i = 0; i < target.length; i++){
+      for (let i = 0; i < target.length; i++) {
         select[target[i]] += 1;
       }
 
-      for(let i = 0; i < children.length; i++){
-        children[i].style.display = 'none';
-      }
       goNext(++qIdx);
-    },240)
+    }, 0)
   }, false);
 }
 
-function goNext(qIdx){
-  if(qIdx === endPoint){
+function goNext(qIdx) {
+  if (qIdx === endPoint) {
     goResult();
     return;
   }
   var q = document.querySelector('.qBox');
   q.innerHTML = qnaList[qIdx].q;
-  for(let i in qnaList[qIdx].a){
+  for (let i in qnaList[qIdx].a) {
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
   }
-  var status = document.querySelector('.statusBar');
-  status.style.width = (100/endPoint) * (qIdx+1) + '%';
+  var statusBar = document.querySelector('.statusBar');
+  statusBar.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
 
-function begin(){
-  main.style.animation = "slideOut 0.5s";
+function begin() {
+  setTimeout(() => {
+    main.style.animation = "slideOut 0.5s";
+    setTimeout(() => {
+      main.style.display = "none";
+    }, 240)
+  }, 240);
   setTimeout(() => {
     qna.style.animation = "slideIn 0.5s";
     setTimeout(() => {
-      main.style.display = "none";
-      qna.style.display = "block"
-    }, 450)
+      qna.style.display = "block";
+      qna.style.margin = "20px auto";
+    }, 240)
     let qIdx = 0;
     goNext(qIdx);
-  }, 450);
+  }, 240);
 }
