@@ -4,7 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
+ul{
+    margin: auto;
+    display: table;
+}
 .result {
     width: 80%;
     text-align: center;
@@ -17,16 +20,19 @@
     border-radius: 20px;
     background-color: whitesmoke;
     padding-bottom: 30px;
-    font-size: 22px;
+    font-size: 18px;
 }
 .resultcon {
-    font-size: 20px;
     margin: auto;
     border-radius: 20px;
     background-color: whitesmoke;
     padding: 30px;
 }
+.resultDesc {
+    font-size: 14px;
+}
 .share {
+    font-family: 'MaplestoryOTFLight';
     vertical-align: middle;
     margin: 0;
     padding:  0.5rem 1rem;
