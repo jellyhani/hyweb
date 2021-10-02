@@ -36,20 +36,20 @@ function closeNav() {
  $('#Album').on('click', function() {
    $('#container').load('https://hymbti.netlify.app/album.html');
  });
- const p = document.getElementById("sentences");
-const origSentences = [
-  "This is the <br /> first sentence.",
-  "This is the second sentence.",
-  "This is the <br /> third sentence."
-];
-let remainingSentences = [];
-function randomSentence() {
-  if (remainingSentences.length === 0)
-    remainingSentences = origSentences.slice();
-  const { length } = remainingSentences;
-  const [quote] = remainingSentences.splice(
-    Math.floor(Math.random() * length),
-    1
-  );
-  p.innerHTML = quote;
-}
+//  const p = document.getElementById("sentences");
+// const origSentences = [
+//   "This is the <br /> first sentence.",
+//   "This is the second sentence.",
+//   "This is the <br /> third sentence."
+// ];
+// let remainingSentences = [];
+// function randomSentence() {
+//   if (remainingSentences.length === 0)
+//     remainingSentences = origSentences.slice();
+//   const { length } = remainingSentences;
+//   const [quote] = remainingSentences.splice(
+//     Math.floor(Math.random() * length),
+//     1
+//   );
+//   p.innerHTML = quote;
+// }
