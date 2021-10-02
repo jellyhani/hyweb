@@ -1,3 +1,21 @@
+//estj', key: 0
+//estp', key: 1
+//esfj', key: 2
+//esfp', key: 3
+//entj', key: 4
+//entp', key: 5
+//enfj', key: 6
+//enfp', key: 7
+//istj', key: 8
+//istp', key: 9
+//isfj', key: 10
+//isfp', key: 11
+//intj', key: 12
+//intp', key: 13
+//infj', key: 14
+//infp', key: 15
+
+
 var qnaList = [
     {
       q: '나는 직장이나 단체에서',
