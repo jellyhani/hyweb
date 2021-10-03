@@ -27,4 +27,4 @@ Uncaught TypeError: Cannot read property 에러 발생 <br>
 # 2021.10.3 <br>
 2021-10-03 08:30 시작 <br>
 2021-10-03 10:37 종료 <br>
-간단 앨범 구현 및 
+간단 앨범 구현 및 예정 
