@@ -6,56 +6,38 @@
 }
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
 }
-.menu {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
+UL {
+    margin: 0;
+    list-style-type: none;
+}
+#filter-list {
+    display: inline-block;
+    border: 1px solid #00f8ff;
+    border-radius: 30px;
+    padding: 4px;
+    margin: 0 0 60px;
+}
+#filter-list li {
+    display: inline-block;
+    font-size: 16px;
+    color: #00f8ff;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+    min-width: 130px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
-    /* border: 3px solid #fff; */
+    transition: all .3s ease-in-out;
 }
-.menu-btn {
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-}
-.menu-btn::before,
-.menu-btn::after {
-    content: '';
-    position: absolute;
-    height: 6px;
-    width: 50px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-}
-.menu-btn::before {
-    transform: translateY(-16px);
-}
-.menu-btn::after {
-    transform: translateY(16px);
-}
-
-.menu.open .menu-btn {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-.menu.open .menu-btn::before {
-    transform: rotate(45deg) translate(35px, -35px);
-}
-.menu.open .menu-btn::after {
-    transform: rotate(-45deg) translate(35px, 35px);
+#filter-list li.current,
+#filter-list li:hover{
+    background-color: #00f8ff;
+    color: #fff;
 }
 .container {
     margin: 40px 20px 0 20px;
@@ -80,31 +62,31 @@ body {
 .container .heading h3 span{
     font-weight: 100;
 }
-.container .box {
+.container .albumbox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.container .box .dream {
+.container .albumbox .album {
     display: flex;
     flex-direction: column;
     width: 32.5%;
 }
-.container .box .dream img{
+.container .albumbox .album img{
     width: 100%;
     padding-bottom: 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.container .box .dream img:hover {
+.container .albumbox .album img:hover {
     transform: scale(1.05);
 }
 @media only screen and (max-width : 769px) {
-    .container .box {
+    .container .albumbox {
         flex-direction: column;
     }
-    .container .box .dream {
+    .container .albumbox .album {
         width: 100%;
     }
 }
