@@ -36,4 +36,5 @@ Uncaught TypeError: Cannot read property 에러 발생 <br>
 13:31 시작 <br>
 16:30 종료 <br>
 album ui 수정
-메인 버튼 수정 이후 휴식하러감 
+메인 버튼 수정 이후 휴식하러감 <br>
+18:37 시작
