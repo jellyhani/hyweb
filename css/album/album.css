@@ -9,6 +9,54 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+}
+.menu-btn {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn::before,
+.menu-btn::after {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn::before {
+    transform: translateY(-16px);
+}
+.menu-btn::after {
+    transform: translateY(16px);
+}
+
+.menu.open .menu-btn {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu.open .menu-btn::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu.open .menu-btn::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
 .container {
     margin: 40px 20px 0 20px;
     box-sizing: border-box;
@@ -46,6 +94,11 @@ body {
     width: 100%;
     padding-bottom: 15px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container .box .dream img:hover {
+    transform: scale(1.05);
 }
 @media only screen and (max-width : 769px) {
     .container .box {
