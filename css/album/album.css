@@ -4,13 +4,66 @@
     font-weight: normal;
     font-style: normal;
 }
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.container {
+    margin: 40px 20px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: 'BMJUA';
 }
-section {
+.container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+.container .heading h3 {
+    font-size:  3rem;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+.container .heading h3 span{
+    font-weight: 100;
+}
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+@media only screen and (max-width : 769px) {
+    .container .box {
+        flex-direction: column;
+    }
+    .container .box .dream {
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 643px) {
+    .container .heading {
+        width: 100%;
+    }
+    .container .heading h3 {
+        font-size: rem;
+    }
+}
+/* section {
     padding: 20px;
     width: 100%;
     height: auto;
@@ -35,8 +88,8 @@ section ul li.active {
     color: #fff;
 }
 .product {
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
 }
 .product .itemBox {
     position: relative;
@@ -50,5 +103,5 @@ section ul li.active {
     left: 0;
     height: 100%;
     object-fit: scale-down;
-    width: 100%;
-}
+    width: 100%; 
+}*/

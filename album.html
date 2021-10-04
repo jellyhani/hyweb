@@ -9,53 +9,45 @@
 </head>
 <body>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Album</span>
-  <section>
-    <ul>
-      <li class="list active" data-filter="all">All</li>
-      <li class="list" data-filter="spring">Spring</li>
-      <li class="list" data-filter="summer">Summer</li>
-      <li class="list" data-filter="autumn">Autumn</li>
-      <li class="list" data-filter="winter">Winter</li>
-    </ul>
-    <div class="product">
-      <div class="itemBox spring"><img src="img/spring1.jpg"></div>
-      <div class="itemBox autumn"><img src="img/autumn1.jpg"></div>
-      <div class="itemBox winter"><img src="img/winter1.jpg"></div>
-      <div class="itemBox spring"><img src="img/spring2.jpg"></div>
-      <div class="itemBox autumn"><img src="img/autumn2.jpg"></div>
-      <div class="itemBox winter"><img src="img/winter2.jpg"></div>
-      <div class="itemBox spring"><img src="img/spring3.jpg"></div>
-      <div class="itemBox autumn"><img src="img/autumn3.jpg"></div>
-      <div class="itemBox winter"><img src="img/winter3.jpg"></div>
-      <div class="itemBox spring"><img src="img/spring4.jpg"></div>
-      <div class="itemBox autumn"><img src="img/autumn4.jpg"></div>
-      <div class="itemBox winter"><img src="img/winter4.jpg"></div>
-      <div class="itemBox spring"><img src="img/spring5.jpg"></div>
-      <div class="itemBox winter"><img src="img/winter5.jpg"></div>
-      <div class="itemBox winter"><img src="img/winter6.jpg"></div>
+  <div class="container">
+    <div class="heading">
+      <h3>Photo <span>Gallery</span></h3>
     </div>
-  </section>
+    <!-- <section>
+      <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="spring">Spring</li>
+        <li class="list" data-filter="summer">Summer</li>
+        <li class="list" data-filter="autumn">Autumn</li>
+        <li class="list" data-filter="winter">Winter</li>
+      </ul> -->
+      <div class="box">
+        <div class="dream">
+          <img src="img/spring1.jpg">
+          <img src="img/autumn1.jpg">
+          <img src="img/winter1.jpg">
+          <img src="img/spring2.jpg">
+        </div>
+        <div class="dream">
+          <img src="img/autumn2.jpg">
+          <img src="img/winter2.jpg">
+          <img src="img/spring3.jpg">
+          <img src="img/autumn3.jpg">
+          <img src="img/winter3.jpg">
+          
+        </div>
+        <div class="dream">
+          
+          <img src="img/spring4.jpg">
+          <img src="img/autumn4.jpg">
+          <img src="img/winter4.jpg">
+          <img src="img/spring5.jpg">
+          <img src="img/winter5.jpg">
+          <img src="img/winter6.jpg">
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-    $('.list').click(function() {
-      const value = $(this).attr('data-filter');
-      if (value == 'all') {
-        $('.itemBox').show('1000');
-      }
-      else {
-        $('.itemBox').not('.'+value).hide('1000');
-        $('.itemBox').filter('.'+value).show('1000');
-      }
-    })
-    $('.list').click(function(){
-      $(this).addClass('active').siblings().removeClass('active');
-    })
-  })
-  </script>
 </body>
 </html>
