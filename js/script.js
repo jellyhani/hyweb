@@ -25,14 +25,14 @@ function closeNav() {
 // });
 
  $('#MBTI').on('click', function() {
-   $('#container').load('https://hymbti.netlify.app/index.html');
+   $('#container').load('https://jellyhani.github.io/hyweb/index.html');
  });
  $('#Kakao').on('click', function() {
-   $('#container').load('https://hymbti.netlify.app/kakao.html');
+   $('#container').load('https://jellyhani.github.io/hyweb/kakao.html');
  });
  $('#HY').on('click', function() {
-   $('#container').load('https://hymbti.netlify.app/hy.html');
+   $('#container').load('https://jellyhani.github.io/hyweb/hy.html');
  });
  $('#Album').on('click', function() {
-   $('#container').load('https://hymbti.netlify.app/album.html');
+   $('#container').load('https://jellyhani.github.io/hyweb/album.html');
  });
