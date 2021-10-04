@@ -11,10 +11,7 @@
 
 
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">  <div class="menu">
-    <div class="menu-btn">
-    </div>
-  </div> Album</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Album</span>
   <div class="container">
     <div class="heading">
       <h3>Photo <span>Gallery</span></h3>
@@ -56,17 +53,4 @@
   </div>
 
 </body>
-<script>
-  const mubtn = document.querySelector('.menu');
-  let muopen = false;
-  mubtn.addEventListener('click', () => {
-    if(!muopen) {
-      mubtn.classList.add('open');
-      muopen = true;
-    } else {
-      mubtn.classList.remove('open');
-      muopen = false;
-    }
-  });
-</script>
 </html>
