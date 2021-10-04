@@ -30,5 +30,8 @@ Uncaught TypeError: Cannot read property 에러 발생 <br>
 간단 앨범 구현 및 보수 예정 <br>
 12:30 시작 <br>
 15:12 종료 <br>
-뻘짓만 하다 끝 잠시 휴식시간 
+뻘짓만 하다 끝 잠시 휴식시간 <br>
+
+# 2021.10.4 <br>
+13:31 시작 <br>
 
