@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-  <!-- https://codepen.io/shakhzod-tojiyev/pen/PoNyRQg -->
+<!-- https://codepen.io/shakhzod-tojiyev/pen/PoNyRQg -->
 
 
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Album</title>
-  <link rel="stylesheet" href="css/album/album.css">
+  
 </head>
 
 <body>
@@ -20,43 +20,44 @@
     <div class="heading">
       <h3>Photo <span>Gallery</span></h3>
     </div>
-        <div class="items">
-          <ul id="filter-list">
-            <li data-target="all">All</li>
-            <li data-target="1">Spring</li>
-            <li data-target="2">Summer</li>
-            <li data-target="3">Autumn</li>
-            <li data-target="4">Winter</li>
-          </ul>
-        </div>
-    <div class="albumbox">
-      <div class="album">
-        <ul>
-          <li><img src="img/spring1.jpg"></li>
-        <div class="image" data-item="3"><img src="img/autumn1.jpg">
-        <div class="image" data-item="4"><img src="img/winter1.jpg">
-        <div class="image" data-item="1"><img src="img/spring2.jpg">
-      </div>
-      <div class="album">
-        <div class="image" data-item="3"><img src="img/autumn2.jpg">
-        <div class="image" data-item="4"><img src="img/winter2.jpg">
-        <div class="image" data-item="1"><img src="img/spring3.jpg">
-        <div class="image" data-item="3"><img src="img/autumn3.jpg">
-        <div class="image" data-item="4"><img src="img/winter3.jpg">
 
-      </div>
-      <div class="album">
-
-        <div class="image" data-item="1"><img src="img/spring4.jpg"></div>
-        <div class="image" data-item="3"><img src="img/autumn4.jpg"></div>
-        <div class="image" data-item="4"><img src="img/winter4.jpg"></div>
-        <div class="image" data-item="1"><img src="img/spring5.jpg"></div>
-        <div class="image" data-item="4"><img src="img/winter5.jpg"></div>
-        <div class="image" data-item="4"><img src="img/winter6.jpg"></div>
+    <div class="filter-list">
+      <div id=myBtnContainer>
+        <button class="button active" onclick="filterSelection('all')">All</button>
+        <button class="button" onclick="filterSelection('spring')">Spring</button>
+        <button class="button" onclick="filterSelection('summer')">Summer</button>
+        <button class="button" onclick="filterSelection('autumn')">Autumn</button>
+        <button class="button" onclick="filterSelection('winter')">Winter</button>
       </div>
     </div>
-    </section>
+
+    <div class="albumbox">
+      <div class="album">
+        <img class="filterDiv spring" src="img/spring1.jpg">
+        <img class="filterDiv autumn" src="img/autumn1.jpg">
+        <img class="filterDiv winter" src="img/winter1.jpg">
+        <img class="filterDiv spring" src="img/spring2.jpg">
+      </div>
+      <div class="album">
+
+        <img class="filterDiv autumn" src="img/autumn2.jpg">
+        <img class="filterDiv winter" src="img/winter2.jpg">
+        <img class="filterDiv spring" src="img/spring3.jpg">
+        <img class="filterDiv autumn" src="img/autumn3.jpg">
+        <img class="filterDiv winter" src="img/winter3.jpg">
+
+
+      </div>
+      <div class="album">
+        <img class="filterDiv spring" src="img/spring4.jpg">
+        <img class="filterDiv autumn" src="img/autumn4.jpg">
+        <img class="filterDiv winter" src="img/winter4.jpg">
+        <img class="filterDiv spring" src="img/spring5.jpg">
+        <img class="filterDiv winter" src="img/winter5.jpg">
+        <img class="filterDiv winter" src="img/winter6.jpg">
+      </div>
+    </div>
   </div>
 </body>
-
+<script src="js/album/album.js"></script>
 </html>

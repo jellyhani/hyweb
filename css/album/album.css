@@ -9,18 +9,15 @@ body {
     padding: 10px;
     box-sizing: border-box;
 }
-UL {
-    margin: 0;
-    list-style-type: none;
-}
-#filter-list {
+.filter-list {
     display: inline-block;
     border: 1px solid #00f8ff;
     border-radius: 30px;
     padding: 4px;
     margin: 0 0 60px;
 }
-#filter-list li {
+.filter-list .button {
+    margin: 5px;
     display: inline-block;
     font-size: 16px;
     color: #00f8ff;
@@ -33,9 +30,10 @@ UL {
     min-width: 130px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    background-color: transparent;
 }
-#filter-list li.current,
-#filter-list li:hover{
+.filter-list .button.current,
+.filter-list .button:hover{
     background-color: #00f8ff;
     color: #fff;
 }
@@ -98,45 +96,28 @@ UL {
         font-size: rem;
     }
 }
-/* section {
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    margin: 40px auto;
-}
-section ul {
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-section ul li {
-    list-style: none;
-    background: #eee;
-    padding: 8px 20px;
-    margin: 5px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-section ul li.active {
-    background: #03a9f4;
-    color: #fff;
-}
-.product {
-    flex-wrap: wrap;
+.filterDiv.show {
     display: flex;
 }
-.product .itemBox {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 5px;
+.filterDiv {
+  float: left;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
 }
-.product .itemBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    object-fit: scale-down;
-    width: 100%; 
-}*/
+.button {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.button:hover {
+    background-color: #00f8ff;
+}
+.button.active {
+    background-color: #00f8ff;
+    color: white;
+}
