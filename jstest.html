@@ -8,14 +8,8 @@
 </head>
 <body>
     <h1>js</h1>
-    <button type="button" onclick="vibrate()" > 진동 시작 </button>
+    <button type="button"> 진동 시작 </button>
 
 </body>
-<script>
-    $(document).ready(function() {
-        $("button").vibrate({
-            duration: 2000,
-        }).trigger("touchstart");
-    });
-</script>
+<script>window.navigator.vibrate(200);</script>
 </html>
