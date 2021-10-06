@@ -9,11 +9,18 @@
 <body>
     <h1>js</h1>
     <button type="button" onclick="Vibrate()"> 진동 시작 </button>
-
+    <button type="button" onclick="Share()">공유</button>
 </body>
 <script>
     function Vibrate() {
 window.navigator.vibrate(10000);
+    }
+    function Share() {
+window.navigator.share({
+    title: document.title,
+    text: 'Hello',
+    url: 'https://hymbti.netlify.app'
+});
     }
 </script>
 </html>
