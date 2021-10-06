@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     margin: 0;
     padding: 10px;
@@ -11,7 +12,7 @@ body {
 }
 .filter-list {
     display: inline-block;
-    border: 1px solid #00f8ff;
+    border: 1px solid #EADEB8;
     border-radius: 30px;
     padding: 4px;
     margin: 0 0 60px;
@@ -20,7 +21,7 @@ body {
     margin: 5px;
     display: inline-block;
     font-size: 16px;
-    color: #00f8ff;
+    color: #EADEB8;
     text-transform: uppercase;
     line-height: 50px;
     text-align: center;
@@ -34,7 +35,7 @@ body {
 }
 .filter-list .button.current,
 .filter-list .button:hover{
-    background-color: #00f8ff;
+    background-color: #EADEB8;
     color: #fff;
 }
 .container {
@@ -106,6 +107,7 @@ body {
   text-align: center;
   margin: 2px;
   display: none;
+  object-fit: scale-down;
 }
 .button {
   border: none;
@@ -115,9 +117,9 @@ body {
   transition: all .5s ease;
 }
 .button:hover {
-    background-color: #00f8ff;
+    background-color: #EADEB8;
 }
 .button.active {
-    background-color: #00f8ff;
+    background-color: #EADEB8;
     color: white;
 }

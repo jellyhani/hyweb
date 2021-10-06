@@ -18,14 +18,14 @@ ul{
     margin: 20px auto;
     padding: 30px;
     border-radius: 20px;
-    background-color: whitesmoke;
+    background-color: #EADEB8;
     padding-bottom: 30px;
     font-size: 18px;
 }
 .resultcon {
     margin: auto;
     border-radius: 20px;
-    background-color: whitesmoke;
+    background-color: #EADEB8;
     padding: 30px;
 }
 .resultDesc {
@@ -47,7 +47,7 @@ ul{
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.5s ease;
-    background-color: yellow;
+    background-color: #CFB784;
     color: black;
     margin-bottom: 20px;
     margin-top: 20px;

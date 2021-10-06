@@ -78,7 +78,7 @@ function goNext(qIdx) {
   for (let i in qnaList[qIdx].a) {
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
   }
-  var statusBar = document.querySelector('.statusBar');
+  var statusBar = document.querySelector('.prog');
   statusBar.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
 

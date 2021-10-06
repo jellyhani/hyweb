@@ -1,7 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-color: pink;
+    background-color: #CFB784;
   }
 .sidenav {
     height: 100%;
@@ -37,10 +37,10 @@ body {
     margin-left: 50px;
   }
   
-  #any {
+  /* #any {
     transition: margin-left .5s;
     margin: 0px;
-  }
+  } */
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
