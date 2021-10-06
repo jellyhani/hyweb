@@ -44,10 +44,10 @@ $('#HY').on('click', function () {
 $('#Album').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/album.html');
 });
-$('#css').on('click', function () {
+$('#Css').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/csstest.html');
 });
-$('#js').on('click', function () {
+$('#Js').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/jstest.html');
 });
 $('#Notice').on('click', function () {
