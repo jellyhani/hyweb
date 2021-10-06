@@ -8,10 +8,13 @@ function closeNav() {
 
 
 
-// $('#MBTI').on('click', function () {
-//     $('#container').load('http://127.0.0.1:5500/index.html #container');
-//     $.getScript('js/mbti/start.js');
-// });
+$('#MBTI').on('click', function () {
+    $('#container').load('http://127.0.0.1:5500/index.html #container');
+    setTimeout(() => {
+        $.getScript('js/mbti/start.js');
+        
+    }, 1000);
+});
 // $('#Kakao').on('click', function () {
 //     $('#container').load('http://127.0.0.1:5500/kakao.html');
 // });
