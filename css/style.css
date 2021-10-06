@@ -63,7 +63,7 @@ body {
 .menu-btn {
     width: 30px;
     height: 5px;
-    background: #fff;
+    background: #EADEB8;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -74,7 +74,7 @@ body {
     position: absolute;
     height: 5px;
     width: 30px;
-    background: #fff;
+    background: #EADEB8;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;

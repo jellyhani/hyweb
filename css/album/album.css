@@ -53,10 +53,11 @@ body {
     padding-bottom: 50px;
 }
 .container .heading h3 {
+    color: #EADEB8;
     font-size:  3rem;
     font-weight: bolder;
     padding-bottom: 10px;
-    border-bottom: 3px solid #222;
+    border-bottom: 3px solid #EADEB8;
 }
 .container .heading h3 span{
     font-weight: 100;
