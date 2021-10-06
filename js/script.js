@@ -27,6 +27,9 @@ function closeNav() {
 // $('#Js').on('click', function () {
 //     $('#container').load('http://127.0.0.1:5500/jstest.html');
 // });
+// $('#Notice').on('click', function () {
+//     $('#container').load('http://127.0.0.1:5500/notice.html');
+// });
 
 $('#MBTI').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/index.html #container');
@@ -46,6 +49,9 @@ $('#css').on('click', function () {
 });
 $('#js').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/jstest.html');
+});
+$('#Notice').on('click', function () {
+    $('#container').load('https://hymbti.netlify.app/notice.html');
 });
 
 
