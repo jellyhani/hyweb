@@ -3,7 +3,9 @@
 
 <head>
 
-  
+  <!-- https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/wordcloud -->
+  <!-- https://www.highcharts.com/demo/wordcloud/sand-signika -->
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +14,33 @@
 </head>
 
 <body>
+
+
   
   <div id="word-cloud"></div>
 
+  <button onclick="openTextFile()">Open</button>
+  <div id="output"><div>
+
 </body>
 <script src="js/kakao/kakao.js"></script>
+<script>
+function openTextFile() {
+    var input = document.createElement("input");
+    input.type = "file";
+    input.accept = "text/plain"; // 확장자가 xxx, yyy 일때, ".xxx, .yyy"
+    input.onchange = function (event) {
+        processFile(event.target.files[0]);
+    };
+    input.click();
+}
+function processFile(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+        output.innerText = reader.result;
+    };
+    reader.readAsText(file, /* optional */ "euc-kr");
+}
+</script>
 
 </html>
