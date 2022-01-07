@@ -1,3 +1,55 @@
 h1 {
     margin: auto;
 }
+.menu {
+    margin-top: 25px;
+    margin-left: 10px;
+    z-index: 3333;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    position: fixed;
+    /* border: 3px solid #fff; */
+}
+.menu-btn {
+    width: 30px;
+    height: 5px;
+    background: #EADEB8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn::before,
+.menu-btn::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    background: #EADEB8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn::before {
+    transform: translateY(-8px);
+}
+.menu-btn::after {
+    transform: translateY(8px);
+}
+
+.menu.open .menu-btn {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu.open .menu-btn::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu.open .menu-btn::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
