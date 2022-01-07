@@ -1,13 +1,14 @@
 h1 {
     margin: auto;
+    
+}
+div {
+    width: 400px;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-div {
-    width: 400px;
 }
 img {
     margin: auto;
