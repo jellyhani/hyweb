@@ -59,7 +59,7 @@ $('#Js').on('click', function () {
 $('#Notice').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/notice.html');
 });
-$('#이종성목사님').on('click', function () {
+$('#할아버지').on('click', function () {
 	$('#container').load('https://hymbti.netlify.app/ljt.html');
 });
 
