@@ -59,7 +59,9 @@ $('#Js').on('click', function () {
 $('#Notice').on('click', function () {
     $('#container').load('https://hymbti.netlify.app/notice.html');
 });
-
+$('#이종성').on('click', function () {
+	$('#container').load('https://hymbti.netlify.app/ljt.html');
+});
 
 const mubtn = document.querySelector('.menu');
   let muopen = false;
