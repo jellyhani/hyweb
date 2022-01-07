@@ -20,7 +20,7 @@ h1 {
 }
 img {
     margin: auto;
-    display: flex;
+    display: block;
     align-items: center;
     flex-direction: column;
     justify-content: center;
