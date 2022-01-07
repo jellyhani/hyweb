@@ -6,6 +6,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+div {
+    width: 400px;
+}
 img {
     margin: auto;
     display: flex;
