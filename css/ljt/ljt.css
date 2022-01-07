@@ -18,6 +18,14 @@ h1 {
 .img {
     width: 80%;
 }
+.counter {
+    width: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 img {
     margin: auto;
     display: block;
