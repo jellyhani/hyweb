@@ -6,6 +6,13 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+img {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .menu {
     margin-top: 25px;
