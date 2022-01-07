@@ -15,15 +15,16 @@
     <h1>이 종 성</h1>
     <h1>1945.04.11 ~ 2022.01.05</h1>
     <p>(78세)</p>
-    <div class="counter"></div>
+    
         </div>
+        <div class="counter"></div>
     </div>
     
 </body>
 <script>
     const counter = document.querySelector('.counter');
     const today = new Date(); //현재 날짜 가져오기
-    const dday = new Date("Jan 1,2021, 00:00:00").getTime(); //디데이
+    const dday = new Date("Jan 1,2022, 00:00:00").getTime(); //디데이
     const gap = today - dday;
     const result = Math.floor(gap / (1000 * 60 * 60 * 24));
   
