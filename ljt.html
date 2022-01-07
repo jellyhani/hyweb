@@ -22,10 +22,10 @@
 <script>
     function getTime () {
     const counter = document.querySelector('.counter');
-    const today = new Date(), //현재 날짜 가져오기
-    dday = new Date("Jan 1,2021, 00:00:00").getTime(), //디데이
-    gap = today - dday,
-    result = Math.floor(gap / (1000 * 60 * 60 * 24));
+    const today = new Date(); //현재 날짜 가져오기
+    const dday = new Date("Jan 1,2021, 00:00:00").getTime(); //디데이
+    const gap = today - dday;
+    const result = Math.floor(gap / (1000 * 60 * 60 * 24));
   
     counter.innerHTML = `D+${result}`;
     }
